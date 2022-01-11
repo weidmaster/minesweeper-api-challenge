@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\CellApiController;
 use App\Http\Controllers\Api\BoardApiController;
 
 /*
@@ -20,5 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::group(['namespace' => 'Api'], function () {
+    Route::get('/cell/{x}/{y}', [CellApiController::class, 'show']);
     Route::get('/board', [BoardApiController::class, 'show']);
 });
