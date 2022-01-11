@@ -16,6 +16,14 @@ class BoardApiController extends Controller
             [0,0]
         ];
 
+        if (session()->has('current')) {
+            $board = session()->get('current');
+        }
+
+        session()->put([
+            'current' => $board
+        ]);
+
         return response()->json($board);
     }
 }
