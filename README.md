@@ -38,3 +38,8 @@ The challenge involves the development of a game API using Laravel as the develo
 
 - First, we need to understand the game itself, its rules, objects and data involved.
 - We then design a rough approach to the game and convert to Restful classic `CRUD` inside Laravel resource controllers.
+- We need a way to start things. The idea is when we `GET` the board, we start or resume the session, showing the current state of the board.
+
+### Endpoints
+
+`GET /board`: Creates a new board or shows the current board state
