@@ -13,6 +13,17 @@ Code challenge for Deviget. A Minesweeper game API.
 * [ ] Ability to select the game parameters: number of rows, columns, and mines
 * [ ] Ability to support multiple users/accounts
 
+### Acceptance criteria
+
+From stakeholders, this challenge must comply with the following:
+
+- Use PHP and Laravel
+- Be sure to complete all the features
+- Add tests
+- Add good documentation
+- UI is not mandatory but adds extra value to the solution. 
+- The repository should be PUBLIC and you should send a URL with the solution on this thread.
+
 ---
 ## Observations
 
